@@ -14,10 +14,10 @@
             </h1>
                 <%if (post.content.length > 100) {%>
                 <p><%=post.content.substring(0, 100) + "..." %></p>
-                <a href="/posts/<%= post.link %>">Read more</a>
+                <a href="/post/<%= post._id %>">Read more</a>
                 <%} else {%>
                     <p><%=post.content%></p>
-                    <a class="" href="/posts/<%= post.link %>">Go to the page</a>
+                    <a class="" href="/post/<%= post._id %>">Go to the post</a>
                     <%} %>
             <% })%>
 
